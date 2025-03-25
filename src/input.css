@@ -1,4 +1,8 @@
 @import "tailwindcss";
-section {
-  padding: 0, 80px;
+
+.section_container {
+  @apply p;
+}
+.banner_icon {
+  @apply w-[40px] h-[40px] border-8 border-emerald-200 rounded-full duration-500 hover:-rotate-12;
 }
