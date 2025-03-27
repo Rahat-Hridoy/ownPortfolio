@@ -2311,6 +2311,11 @@
       width: calc(2/5 * 100%);
     }
   }
+  .md\:w-auto {
+    @media (width >= 48rem) {
+      width: auto;
+    }
+  }
 }
 .banner_icon {
   height: 40px;
