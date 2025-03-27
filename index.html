@@ -27,6 +27,7 @@
     />
     <title>Rahat Hridoy</title>
     <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./src/input.css" />
   </head>
 
   <body class="bg-emerald-100">
@@ -170,11 +171,11 @@
       <!-- End Banner Part -->
 
       <!-- Experience  -->
-      <section id="experience" class="p-20">
+      <section id="experience" class="p-20 flex justify-center items-center">
         <div class="container mx-auto px-4 text-center">
           <h2 class="text-4xl font-bold pb-8">Experience</h2>
           <div
-            class="mx-auto px-10 py-5 border border-gray-400 rounded-xl shadow-md"
+            class="w-2xl px-10 py-5 border border-gray-400 rounded-xl shadow-md"
           >
             <h3 class="text-2xl font-bold py-2 text-gray-900">
               Web Development
@@ -191,7 +192,7 @@
               aria-label="Skills"
             >
               <span
-                class="border-1 bg-emerald-200 rounded-3xl px-4 duration-300 hover:bg-emerald-100"
+                class="border-1 bg-emerald-200 rounded-3xl px-4 duration-300 hover:bg-emerald-z100"
               >
                 JavaScript
               </span>
@@ -394,17 +395,22 @@
       <!-- Project  -->
       <section class="p-20">
         <div>
-          <h3 class="text-4xl font-bold text-center pb-8">Projects</h3>
+          <h2 class="text-4xl font-bold text-center pb-8">Projects</h2>
         </div>
         <!-- Project cards -->
         <div class="flex items-stretch flex-wrap gap-x-4 gap-y-5">
           <!-- Portfolio website  -->
-          <div class="border-1 w-[384px] border-gray-400 rounded-xl">
-            <img
-              src="./assests/personal_portfolio_website.jpg"
-              alt="Project"
-              class="rounded-xl w-full h-[216px]"
-            />
+          <article
+            class="border rounded-xl w-[384px] border-gray-400"
+            aria-labelledby="portfolio-title"
+          >
+            <figure>
+              <img
+                src="./assests/personal_portfolio_website.jpg"
+                alt="Preview of the portfolio website"
+                class="rounded-xl w-full h-[216px]"
+              />
+            </figure>
             <div class="flex flex-col justify-stretch p-5">
               <div>
                 <h3 class="text-xl font-bold text-gray-800 pb-2">
@@ -421,64 +427,61 @@
                 <div
                   class="flex justify-items-start items-center flex-wrap gap-x-3 gap-y-2 py-3"
                 >
-                  <p
+                  <span
                     class="text-emerald-100 border-1 bg-[#375e38] rounded-3xl px-4"
                   >
                     HTML
-                  </p>
-                  <p
+                  </span>
+                  <span
                     class="text-emerald-100 border-1 bg-[#375e38] rounded-3xl px-4"
                   >
                     Tailwind CSS
-                  </p>
-                  <p
+                  </span>
+                  <span
                     class="text-emerald-100 border-1 bg-[#375e38] rounded-3xl px-4"
                   >
                     JavaScript
-                  </p>
+                  </span>
                 </div>
               </div>
               <div class="flex justify-between items-center">
-                <button
-                  class="flex justify-center items-center gap-2 border-1 rounded-2xl px-2 py-1 hover:cursor-pointer"
-                  type="button"
-                >
-                  <a
-                    href="https://github.com/Rahat-Hridoy/ownPortfolio.git"
-                    target="_blank"
-                    class="font-semibold"
-                    >GitHub Repository</a
-                  ><img
+                <a
+                  href="https://github.com/Rahat-Hridoy/ownPortfolio.git"
+                  target="_blank"
+                  class="flex justify-center items-center gap-2 font-semibold border-1 rounded-2xl px-2 py-1 hover:cursor-pointer"
+                  >GitHub Repository
+                  <img
                     src="./assests/icons8-link-chain-26.png"
                     alt="link"
                     class="w-4 h-4"
                   />
-                </button>
-                <button
-                  class="flex justify-center items-center gap-2 border-1 rounded-2xl px-2 py-1 hover:cursor-pointer"
-                  type="button"
-                >
-                  <a
-                    href="https://startup-agency-website-template.vercel.app/"
-                    target="_blank"
-                    class="font-semibold"
-                    >Live URL</a
-                  ><img
+                </a>
+                <a
+                  href="https://startup-agency-website-template.vercel.app/"
+                  target="_blank"
+                  class="flex justify-center items-center gap-2 font-semibold border-1 rounded-2xl px-2 py-1 hover:cursor-pointer"
+                  >Live URL
+                  <img
                     src="./assests/icons8-link-32.png"
                     alt="link"
                     class="w-5 h-5"
                   />
-                </button>
+                </a>
               </div>
             </div>
-          </div>
+          </article>
           <!-- StartUp Website  -->
-          <div class="border-1 w-[384px] border-gray-400 rounded-xl">
-            <img
-              src="./assests/startup_website.jpg"
-              alt="Project"
-              class="rounded-xl w-full h-[216px]"
-            />
+          <article
+            class="border rounded-xl w-[384px] border-gray-400"
+            aria-labelledby="portfolio-title"
+          >
+            <figure>
+              <img
+                src="./assests/startup_website.jpg"
+                alt="Preview of the portfolio website"
+                class="rounded-xl w-full h-[216px]"
+              />
+            </figure>
             <div class="flex flex-col justify-stretch p-5">
               <div>
                 <h3 class="text-xl font-bold text-gray-800 pb-2">
@@ -494,251 +497,269 @@
                 <div
                   class="flex justify-items-start items-center flex-wrap gap-x-3 gap-y-2 py-3"
                 >
-                  <p
+                  <span
                     class="text-emerald-100 border-1 bg-[#375e38] rounded-3xl px-4"
                   >
                     HTML
-                  </p>
-                  <p
+                  </span>
+                  <span
                     class="text-emerald-100 border-1 bg-[#375e38] rounded-3xl px-4"
                   >
                     CSS
-                  </p>
+                  </span>
+                  <span
+                    class="text-emerald-100 border-1 bg-[#375e38] rounded-3xl px-4"
+                  >
+                    JavaScript
+                  </span>
                 </div>
               </div>
               <div class="flex justify-between items-center">
-                <button
-                  class="flex justify-center items-center gap-2 border-1 rounded-2xl px-2 py-1 hover:cursor-pointer"
-                  type="button"
-                >
-                  <a
-                    href="https://github.com/Rahat-Hridoy/Startup_agency_website_template"
-                    target="_blank"
-                    class="font-semibold"
-                    >GitHub Repository</a
-                  ><img
+                <a
+                  href="https://github.com/Rahat-Hridoy/Startup_agency_website_template"
+                  target="_blank"
+                  class="flex justify-center items-center gap-2 font-semibold border-1 rounded-2xl px-2 py-1 hover:cursor-pointer"
+                  >GitHub Repository
+                  <img
                     src="./assests/icons8-link-chain-26.png"
                     alt="link"
                     class="w-4 h-4"
                   />
-                </button>
-                <button
-                  class="flex justify-center items-center gap-2 border-1 rounded-2xl px-2 py-1 hover:cursor-pointer"
-                  type="button"
-                >
-                  <a
-                    href="https://startup-agency-website-template.vercel.app/"
-                    target="_blank"
-                    class="font-semibold"
-                    >Live URL</a
-                  ><img
+                </a>
+                <a
+                  href="https://startup-agency-website-template.vercel.app/"
+                  target="_blank"
+                  class="flex justify-center items-center gap-2 font-semibold border-1 rounded-2xl px-2 py-1 hover:cursor-pointer"
+                  >Live URL
+                  <img
                     src="./assests/icons8-link-32.png"
                     alt="link"
                     class="w-5 h-5"
                   />
-                </button>
+                </a>
               </div>
             </div>
-          </div>
-          <!-- Bank Website  -->
-          <div class="border-1 w-[384px] border-gray-400 rounded-xl">
-            <img
-              src="./assests/bank-website.jpg"
-              alt="Project"
-              class="rounded-xl w-full h-[216px]"
-            />
-            <div class="p-5">
-              <h3 class="text-xl font-bold text-gray-800 pb-2">
-                Banking Website
-              </h3>
-              <p
-                class="font-semibold text-[#263626] leading-tight text-justify"
-              >
-                Developed a modern banking website using HTML & CSS, featuring a
-                sleek dark theme, transaction tracking, and an intuitive UI for
-                enhanced user experience.
-              </p>
-              <div
-                class="flex justify-items-start items-center flex-wrap gap-x-3 gap-y-2 py-3"
-              >
+          </article>
+          <!-- Banking Website   -->
+          <article
+            class="border rounded-xl w-[384px] border-gray-400"
+            aria-labelledby="portfolio-title"
+          >
+            <!-- update banner -->
+            <figure>
+              <img
+                src="./assests/bank-website.jpg"
+                alt="Preview of the portfolio website"
+                class="rounded-xl w-full h-[216px]"
+              />
+            </figure>
+
+            <div class="flex flex-col justify-stretch p-5">
+              <div>
+                <!--update Title  -->
+                <h3 class="text-xl font-bold text-gray-800 pb-2">
+                  Banking Website
+                </h3>
+                <!-- update Description -->
                 <p
-                  class="text-emerald-100 border-1 bg-[#375e38] rounded-3xl px-4"
+                  class="font-semibold text-[#263626] leading-tight text-justify"
                 >
-                  HTML
+                  Developed a modern banking website using HTML & CSS, featuring
+                  a sleek dark theme, transaction tracking, and an intuitive UI
+                  for enhanced user experience.
                 </p>
-                <p
-                  class="text-emerald-100 border-1 bg-[#375e38] rounded-3xl px-4"
+                <!-- update technology -->
+                <div
+                  class="flex justify-items-start items-center flex-wrap gap-x-3 gap-y-2 py-3"
                 >
-                  CSS
-                </p>
+                  <span
+                    class="text-emerald-100 border-1 bg-[#375e38] rounded-3xl px-4"
+                  >
+                    HTML
+                  </span>
+                  <span
+                    class="text-emerald-100 border-1 bg-[#375e38] rounded-3xl px-4"
+                  >
+                    CSS
+                  </span>
+                </div>
               </div>
               <div class="flex justify-between items-center">
-                <button
-                  class="flex justify-center items-center gap-2 border-1 rounded-2xl px-2 py-1 hover:cursor-pointer"
-                  type="button"
-                >
-                  <a
-                    href="https://github.com/Rahat-Hridoy/YourBank"
-                    target="_blank"
-                    class="font-semibold"
-                    >GitHub Repository</a
-                  ><img
+                <!-- update gitHub repository -->
+                <a
+                  href="https://github.com/Rahat-Hridoy/YourBank"
+                  target="_blank"
+                  class="flex justify-center items-center gap-2 font-semibold border-1 rounded-2xl px-2 py-1 hover:cursor-pointer"
+                  >GitHub Repository
+                  <img
                     src="./assests/icons8-link-chain-26.png"
                     alt="link"
                     class="w-4 h-4"
                   />
-                </button>
-                <button
-                  class="flex justify-center items-center gap-2 border-1 rounded-2xl px-2 py-1 hover:cursor-pointer"
-                  type="button"
-                >
-                  <a
-                    href="https://stellar-lily-d2cd52.netlify.app/"
-                    target="_blank"
-                    class="font-semibold"
-                    >Live URL</a
-                  ><img
+                </a>
+                <!-- update Live Link  -->
+                <a
+                  href="https://stellar-lily-d2cd52.netlify.app/"
+                  target="_blank"
+                  class="flex justify-center items-center gap-2 font-semibold border-1 rounded-2xl px-2 py-1 hover:cursor-pointer"
+                  >Live URL
+                  <img
                     src="./assests/icons8-link-32.png"
                     alt="link"
                     class="w-5 h-5"
                   />
-                </button>
+                </a>
               </div>
             </div>
-          </div>
-          <!-- Financial Website  -->
-          <div class="border-1 w-[384px] border-gray-400 rounded-xl">
-            <img
-              src="./assests/finacial website .jpg"
-              alt="Project"
-              class="rounded-xl w-full h-[216px]"
-            />
-            <div class="p-5">
-              <h3 class="text-xl font-bold text-gray-800 pb-2">
-                Financial Website
-              </h3>
-              <p
-                class="font-semibold text-[#263626] leading-tight text-justify"
-              >
-                Developed a modern, responsive financial website using raw HTML
-                and CSS. Designed an intuitive user interface with engaging
-                visuals, secure transaction sections, and real-time exchange
-                rate displays. Ensured a seamless user experience with a
-                structured layout and interactive elements.
-              </p>
-              <div
-                class="flex justify-items-start items-center flex-wrap gap-x-3 gap-y-2 py-3"
-              >
+          </article>
+          <!-- Finacial Website   -->
+          <article
+            class="border rounded-xl w-[384px] border-gray-400"
+            aria-labelledby="portfolio-title"
+          >
+            <!-- update banner -->
+            <figure>
+              <img
+                src="./assests/finacial website .jpg"
+                alt="Preview of the portfolio website"
+                class="rounded-xl w-full h-[216px]"
+              />
+            </figure>
+
+            <div class="flex flex-col justify-stretch p-5">
+              <div>
+                <!--update Title  -->
+                <h3 class="text-xl font-bold text-gray-800 pb-2">
+                  Financial Website
+                </h3>
+                <!-- update Description -->
                 <p
-                  class="text-emerald-100 border-1 bg-[#375e38] rounded-3xl px-4"
+                  class="font-semibold text-[#263626] leading-tight text-justify"
                 >
-                  HTML
+                  Developed a modern, responsive financial website using raw
+                  HTML and CSS. Designed an intuitive user interface with
+                  engaging visuals, secure transaction sections, and real-time
+                  exchange rate displays. Ensured a seamless user experience
+                  with a structured layout and interactive elements.
                 </p>
-                <p
-                  class="text-emerald-100 border-1 bg-[#375e38] rounded-3xl px-4"
+                <!-- update technology -->
+                <div
+                  class="flex justify-items-start items-center flex-wrap gap-x-3 gap-y-2 py-3"
                 >
-                  CSS
-                </p>
+                  <span
+                    class="text-emerald-100 border-1 bg-[#375e38] rounded-3xl px-4"
+                  >
+                    HTML
+                  </span>
+                  <span
+                    class="text-emerald-100 border-1 bg-[#375e38] rounded-3xl px-4"
+                  >
+                    CSS
+                  </span>
+                </div>
               </div>
               <div class="flex justify-between items-center">
-                <button
-                  class="flex justify-center items-center gap-2 border-1 rounded-2xl px-2 py-1 hover:cursor-pointer"
-                  type="button"
-                >
-                  <a
-                    href="https://github.com/Rahat-Hridoy/FinSweet"
-                    target="_blank"
-                    class="font-semibold"
-                    >GitHub Repository</a
-                  ><img
+                <!-- update gitHub repository -->
+                <a
+                  href="https://github.com/Rahat-Hridoy/FinSweet"
+                  target="_blank"
+                  class="flex justify-center items-center gap-2 font-semibold border-1 rounded-2xl px-2 py-1 hover:cursor-pointer"
+                  >GitHub Repository
+                  <img
                     src="./assests/icons8-link-chain-26.png"
                     alt="link"
                     class="w-4 h-4"
                   />
-                </button>
-                <button
-                  class="flex justify-center items-center gap-2 border-1 rounded-2xl px-2 py-1 hover:cursor-pointer"
-                  type="button"
-                >
-                  <a
-                    href="https://candid-panda-ed43ff.netlify.app/#"
-                    target="_blank"
-                    class="font-semibold"
-                    >Live URL</a
-                  ><img
+                </a>
+                <!-- update Live Link  -->
+                <a
+                  href="https://candid-panda-ed43ff.netlify.app/#"
+                  target="_blank"
+                  class="flex justify-center items-center gap-2 font-semibold border-1 rounded-2xl px-2 py-1 hover:cursor-pointer"
+                  >Live URL
+                  <img
                     src="./assests/icons8-link-32.png"
                     alt="link"
                     class="w-5 h-5"
                   />
-                </button>
+                </a>
               </div>
             </div>
-          </div>
-          <!-- WordPress Website  -->
-          <div class="border-1 w-[384px] border-gray-400 rounded-xl">
-            <img
-              src="./assests/wordpress_project.jpg"
-              alt="Project"
-              class="rounded-xl w-full h-[216px]"
-            />
-            <div class="p-5">
-              <h3 class="text-xl font-bold text-gray-800 pb-2">
-                WordPress Website
-              </h3>
-              <p
-                class="font-semibold text-[#263626] leading-tight text-justify"
-              >
-                Developed a dynamic and user-friendly financial website using
-                WordPress. Integrated custom themes, plugins, and responsive
-                design to enhance user experience. Implemented SEO optimization,
-                secure transactions, and interactive financial tools to improve
-                engagement and functionality.
-              </p>
-              <div
-                class="flex justify-items-start items-center flex-wrap gap-x-3 gap-y-2 py-3"
-              >
+          </article>
+          <!-- WordPress Website   -->
+          <article
+            class="border rounded-xl w-[384px] border-gray-400"
+            aria-labelledby="portfolio-title"
+          >
+            <!-- update banner -->
+            <figure>
+              <img
+                src="./assests/wordpress_project.jpg"
+                alt="Preview of the portfolio website"
+                class="rounded-xl w-full h-[216px]"
+              />
+            </figure>
+
+            <div class="flex flex-col justify-stretch p-5">
+              <div>
+                <!--update Title  -->
+                <h3 class="text-xl font-bold text-gray-800 pb-2">
+                  WordPress Website
+                </h3>
+                <!-- update Description -->
                 <p
-                  class="text-emerald-100 border-1 bg-[#375e38] rounded-3xl px-4"
+                  class="font-semibold text-[#263626] leading-tight text-justify"
                 >
-                  Elementor
+                  Developed a dynamic and user-friendly financial website using
+                  WordPress. Integrated custom themes, plugins, and responsive
+                  design to enhance user experience. Implemented SEO
+                  optimization, secure transactions, and interactive financial
+                  tools to improve engagement and functionality.
                 </p>
-                <p
-                  class="text-emerald-100 border-1 bg-[#375e38] rounded-3xl px-4"
+                <!-- update technology -->
+                <div
+                  class="flex justify-items-start items-center flex-wrap gap-x-3 gap-y-2 py-3"
                 >
-                  CSS
-                </p>
+                  <span
+                    class="text-emerald-100 border-1 bg-[#375e38] rounded-3xl px-4"
+                  >
+                    Elementor
+                  </span>
+                  <span
+                    class="text-emerald-100 border-1 bg-[#375e38] rounded-3xl px-4"
+                  >
+                    CSS
+                  </span>
+                </div>
               </div>
               <div class="flex justify-between items-center">
-                <button
-                  class="flex justify-center items-center gap-2 border-1 rounded-2xl px-2 py-1 hover:cursor-pointer"
-                  type="button"
-                >
-                  <a href="#" target="_blank" class="font-semibold"
-                    >GitHub Repository</a
-                  ><img
+                <!-- update gitHub repository -->
+                <a
+                  href="#"
+                  target="_blank"
+                  class="flex justify-center items-center gap-2 font-semibold border-1 rounded-2xl px-2 py-1 hover:cursor-pointer"
+                  >GitHub Repository
+                  <img
                     src="./assests/icons8-link-chain-26.png"
                     alt="link"
                     class="w-4 h-4"
                   />
-                </button>
-                <button
-                  class="flex justify-center items-center gap-2 border-1 rounded-2xl px-2 py-1 hover:cursor-pointer"
-                  type="button"
-                >
-                  <a
-                    href="https://dev-practice-site-by-rahat.pantheonsite.io/landing-page/?preview_id=12&preview_nonce=1758059095&preview=true"
-                    target="_blank"
-                    class="font-semibold"
-                    >Live URL</a
-                  ><img
+                </a>
+                <!-- update Live Link  -->
+                <a
+                  href="https://dev-practice-site-by-rahat.pantheonsite.io/landing-page/?preview_id=12&preview_nonce=1758059095&preview=true"
+                  target="_blank"
+                  class="flex justify-center items-center gap-2 font-semibold border-1 rounded-2xl px-2 py-1 hover:cursor-pointer"
+                  >Live URL
+                  <img
                     src="./assests/icons8-link-32.png"
                     alt="link"
                     class="w-5 h-5"
                   />
-                </button>
+                </a>
               </div>
             </div>
-          </div>
+          </article>
         </div>
       </section>
       <!-- End Project -->

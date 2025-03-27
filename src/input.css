@@ -6,3 +6,6 @@
 .banner_icon {
   @apply w-[40px] h-[40px] border-8 border-emerald-200 rounded-full duration-500 hover:-rotate-12;
 }
+.tech-tag {
+  @apply text-red-900 text-emerald-100 border-1 bg-[#375e38] rounded-3xl px-4;
+}
