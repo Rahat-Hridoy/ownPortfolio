@@ -1,8 +1,17 @@
 @import "tailwindcss";
+.container {
+  @apply w-[85%] m-auto py-15 text-gray-900;
+}
 
 .banner_icon {
   @apply w-[40px] h-[40px] border-8 border-emerald-200 rounded-full duration-500 hover:-rotate-12;
 }
 .tech-tag {
   @apply text-red-900  border-1 bg-[#375e38] rounded-3xl px-4;
+}
+.skill-container {
+  @apply flex items-center gap-x-3 text-gray-900 font-bold text-lg;
+}
+.skill-icon {
+  @apply w-8 h-8;
 }
