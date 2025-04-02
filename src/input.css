@@ -1,10 +1,15 @@
 @import "tailwindcss";
+@config "../tailwind.config.js";
+
 .container {
   @apply w-[85%] m-auto py-15 text-gray-900;
 }
 
 .banner_icon {
-  @apply w-[40px] h-[40px] border-8 border-emerald-200 rounded-full duration-500 hover:-rotate-12;
+  @apply w-[40px] h-[40px] p-1 bg-emerald-700/30  rounded-full duration-500 hover:-rotate-12;
+}
+.experience-tech {
+  @apply font-semibold border-1 border-transparent bg-emerald-700/30 rounded-3xl px-4 duration-300;
 }
 .tech-tag {
   @apply text-red-900  border-1 bg-[#375e38] rounded-3xl px-4;
@@ -14,4 +19,19 @@
 }
 .skill-icon {
   @apply w-8 h-8;
+}
+.project-art {
+  @apply border rounded-xl w-[384px] border-gray-400 relative pb-10;
+}
+.git-repo {
+  @apply flex justify-center items-center gap-2 font-semibold border-1 rounded-2xl px-2 py-1 absolute bottom-2 left-5 duration-600;
+}
+.git-repo-hover {
+  @apply hover:bg-emerald-700/30 hover:cursor-pointer hover:border-transparent;
+}
+.live-link {
+  @apply flex justify-center items-center gap-2 font-semibold border-1 rounded-2xl px-2 py-1 absolute bottom-2 right-5  duration-600;
+}
+.live-link-hover {
+  @apply hover:bg-emerald-700/30 hover:cursor-pointer hover:border-transparent;
 }

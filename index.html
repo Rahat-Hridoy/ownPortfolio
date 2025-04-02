@@ -22,7 +22,7 @@
     <!-- Favicon -->
     <link
       rel="icon"
-      href="./assests/rahatHridoy_favicon_icon6.png"
+      href="./assests/rahatHridoy_favicon_icon4.png"
       type="image/x-icon"
     />
     <title>Rahat Hridoy</title>
@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="./src/input.css" />
   </head>
 
-  <body class="bg-emerald-100">
+  <body class="bg-emerald-900/30">
     <!-- navbar  -->
     <header class="relative">
       <nav></nav>
@@ -83,8 +83,13 @@
       <!-- Banner Part  -->
       <section>
         <div
-          class="flex justify-center items-center flex-col h-screen bg-emerald-300"
+          class="flex justify-center items-center w-full h-screen flex-col bg-gradient-to-tr from-emerald-900/50 to-emerald-50/50 relative"
         >
+          <img
+            src="./assests/banner_bgImage.png"
+            alt="backgrounImage"
+            class="absolute -z-10 w-full h-screen"
+          />
           <div class="flex justify-center items-center gap-5">
             <div
               class="translate-all duration-300 hover:-rotate-20 hover:scale-105"
@@ -97,7 +102,7 @@
             </div>
             <div>
               <h3
-                class="text-gray-900 font-bold text-3xl leading-10 tracking-wider text-left"
+                class="text-emerald-50 font-extrabold text-3xl leading-10 tracking-wider drop-shadow-[-2px_2px_1px_rgb(0,0,0,70%)]"
               >
                 Rahat Hridoy
               </h3>
@@ -107,7 +112,7 @@
                   alt="Bangladesh"
                   class="w-[40px] h-[40px]"
                 /> -->
-                <p class="text-gray-800 text-left font-semibold pl-1">
+                <p class="text-cyan-50 text-left font-semibold pl-1">
                   Based in Bangladesh
                 </p>
               </div>
@@ -116,16 +121,18 @@
           <div class="relative">
             <div>
               <h1
-                class="text-gray-900 text-8xl font-bold tracking-wide mt-6 ml-25"
+                class="text-red-100 text-8xl font-bold tracking-wide mt-6 ml-25 drop-shadow-[-2px_2px_3px_rgb(0,0,0,70%)]"
               >
                 FRONTEND
               </h1>
-              <h1 class="text-gray-900 text-8xl font-bold tracking-wide mb-6">
+              <h1
+                class="text-red-100 text-8xl font-bold tracking-wide mb-6 drop-shadow-[-2px_2px_3px_rgb(0,0,0,70%)]"
+              >
                 DEVELOPER
               </h1>
             </div>
             <button
-              class="absolute w-[180px] h-[45px] md:bottom-11 md:-right-28 flex items-center justify-center gap-2 border-2 border-solid rounded-3xl font-bold px-6 py-2 cursor-pointer translate-all duration-300 bg-gradient-to-br bg-emerald-200 hover:bg-emerald-100"
+              class="absolute w-[180px] h-[45px] md:bottom-11 md:-right-28 flex items-center justify-center gap-2 border-2 rounded-3xl font-bold px-6 py-2 cursor-pointer translate-all duration-500 bg-gradient-to-br hover:bg-emerald-700/30"
               type="button"
             >
               <img
@@ -174,9 +181,9 @@
       <!-- End Banner Part -->
 
       <!-- Experience  -->
-      <section id="experience" class="p-20 flex justify-center items-center">
+      <section id="experience" class="p-10 flex justify-center items-center">
         <div class="container mx-auto px-4 text-center">
-          <h2 class="text-4xl font-bold pb-8">Experience</h2>
+          <h2 class="text-4xl font-bold pb-15">Experience</h2>
           <div
             class="w-2xl mx-auto px-10 py-5 border border-gray-400 rounded-xl shadow-md"
           >
@@ -194,46 +201,14 @@
               class="flex flex-wrap gap-x-3 gap-y-3 py-3"
               aria-label="Skills"
             >
-              <span
-                class="border-1 bg-emerald-200 rounded-3xl px-4 duration-300 hover:bg-emerald-z100"
-              >
-                JavaScript
-              </span>
-              <span
-                class="border-1 bg-emerald-200 rounded-3xl px-4 duration-300 hover:bg-emerald-100"
-              >
-                HTML
-              </span>
-              <span
-                class="border-1 bg-emerald-200 rounded-3xl px-4 duration-300 hover:bg-emerald-100"
-              >
-                CSS
-              </span>
-              <span
-                class="border-1 bg-emerald-200 rounded-3xl px-4 duration-300 hover:bg-emerald-100"
-              >
-                Tailwind CSS
-              </span>
-              <span
-                class="border-1 bg-emerald-200 rounded-3xl px-4 duration-300 hover:bg-emerald-100"
-              >
-                PHP
-              </span>
-              <span
-                class="border-1 bg-emerald-200 rounded-3xl px-4 duration-300 hover:bg-emerald-100"
-              >
-                ReactJS
-              </span>
-              <span
-                class="border-1 bg-emerald-200 rounded-3xl px-4 duration-300 hover:bg-emerald-100"
-              >
-                Shopify
-              </span>
-              <span
-                class="border-1 bg-emerald-200 rounded-3xl px-4 duration-300 hover:bg-emerald-100"
-              >
-                WordPress
-              </span>
+              <span class="experience-tech"> JavaScript </span>
+              <span class="experience-tech"> HTML </span>
+              <span class="experience-tech"> CSS </span>
+              <span class="experience-tech"> Tailwind CSS </span>
+              <span class="experience-tech"> PHP </span>
+              <span class="experience-tech"> ReactJS </span>
+              <span class="experience-tech"> Shopify </span>
+              <span class="experience-tech"> WordPress </span>
             </div>
           </div>
         </div>
@@ -523,13 +498,10 @@
           <!-- Project cards -->
           <div class="flex items-stretch flex-wrap gap-x-4 gap-y-5">
             <!-- Portfolio website 1  -->
-            <article
-              class="border rounded-xl w-[384px] border-gray-400"
-              aria-labelledby="portfolio-title"
-            >
+            <article class="project-art" aria-labelledby="portfolio-title">
               <figure>
                 <img
-                  src="./assests/personal_portfolio_website.jpg"
+                  src="./assests/ownPortfolio.jpg"
                   alt="Preview of the portfolio website"
                   class="rounded-xl w-full h-[216px]"
                 />
@@ -571,7 +543,7 @@
                   <a
                     href="https://github.com/Rahat-Hridoy/ownPortfolio.git"
                     target="_blank"
-                    class="flex justify-center items-center gap-2 font-semibold border-1 rounded-2xl px-2 py-1 hover:cursor-pointer"
+                    class="git-repo git-repo-hover"
                     >GitHub Repository
                     <img
                       src="./assests/icons8-link-chain-26.png"
@@ -582,7 +554,7 @@
                   <a
                     href="https://startup-agency-website-template.vercel.app/"
                     target="_blank"
-                    class="flex justify-center items-center gap-2 font-semibold border-1 rounded-2xl px-2 py-1 hover:cursor-pointer"
+                    class="live-link live-link-hover"
                     >Live URL
                     <img
                       src="./assests/icons8-link-32.png"
@@ -594,10 +566,7 @@
               </div>
             </article>
             <!-- Portfolio website 2  -->
-            <article
-              class="border rounded-xl w-[384px] border-gray-400"
-              aria-labelledby="portfolio-title"
-            >
+            <article class="project-art" aria-labelledby="portfolio-title">
               <figure>
                 <img
                   src="./assests/rrf-portfolio.jpg"
@@ -642,7 +611,7 @@
                   <a
                     href="https://github.com/Rahat-Hridoy/RRF-Exam1.git"
                     target="_blank"
-                    class="flex justify-center items-center gap-2 font-semibold border-1 rounded-2xl px-2 py-1 hover:cursor-pointer"
+                    class="git-repo git-repo-hover"
                     >GitHub Repository
                     <img
                       src="./assests/icons8-link-chain-26.png"
@@ -653,7 +622,7 @@
                   <a
                     href="https://boisterous-wisp-faeea4.netlify.app/"
                     target="_blank"
-                    class="flex justify-center items-center gap-2 font-semibold border-1 rounded-2xl px-2 py-1 hover:cursor-pointer"
+                    class="live-link live-link-hover"
                     >Live URL
                     <img
                       src="./assests/icons8-link-32.png"
@@ -665,10 +634,7 @@
               </div>
             </article>
             <!-- StartUp Website  -->
-            <article
-              class="border rounded-xl w-[384px] border-gray-400"
-              aria-labelledby="portfolio-title"
-            >
+            <article class="project-art" aria-labelledby="portfolio-title">
               <figure>
                 <img
                   src="./assests/startup_website.jpg"
@@ -712,7 +678,7 @@
                   <a
                     href="https://github.com/Rahat-Hridoy/Startup_agency_website_template"
                     target="_blank"
-                    class="flex justify-center items-center gap-2 font-semibold border-1 rounded-2xl px-2 py-1 hover:cursor-pointer"
+                    class="git-repo git-repo-hover"
                     >GitHub Repository
                     <img
                       src="./assests/icons8-link-chain-26.png"
@@ -723,7 +689,7 @@
                   <a
                     href="https://startup-agency-website-template.vercel.app/"
                     target="_blank"
-                    class="flex justify-center items-center gap-2 font-semibold border-1 rounded-2xl px-2 py-1 hover:cursor-pointer"
+                    class="live-link live-link-hover"
                     >Live URL
                     <img
                       src="./assests/icons8-link-32.png"
@@ -735,10 +701,7 @@
               </div>
             </article>
             <!-- Banking Website   -->
-            <article
-              class="border rounded-xl w-[384px] border-gray-400"
-              aria-labelledby="portfolio-title"
-            >
+            <article class="project-art" aria-labelledby="portfolio-title">
               <!-- update banner -->
               <figure>
                 <img
@@ -783,7 +746,7 @@
                   <a
                     href="https://github.com/Rahat-Hridoy/YourBank"
                     target="_blank"
-                    class="flex justify-center items-center gap-2 font-semibold border-1 rounded-2xl px-2 py-1 hover:cursor-pointer"
+                    class="git-repo git-repo-hover"
                     >GitHub Repository
                     <img
                       src="./assests/icons8-link-chain-26.png"
@@ -795,7 +758,7 @@
                   <a
                     href="https://stellar-lily-d2cd52.netlify.app/"
                     target="_blank"
-                    class="flex justify-center items-center gap-2 font-semibold border-1 rounded-2xl px-2 py-1 hover:cursor-pointer"
+                    class="live-link live-link-hover"
                     >Live URL
                     <img
                       src="./assests/icons8-link-32.png"
@@ -807,10 +770,7 @@
               </div>
             </article>
             <!-- Finacial Website   -->
-            <article
-              class="border rounded-xl w-[384px] border-gray-400"
-              aria-labelledby="portfolio-title"
-            >
+            <article class="project-art" aria-labelledby="portfolio-title">
               <!-- update banner -->
               <figure>
                 <img
@@ -857,7 +817,7 @@
                   <a
                     href="https://github.com/Rahat-Hridoy/FinSweet"
                     target="_blank"
-                    class="flex justify-center items-center gap-2 font-semibold border-1 rounded-2xl px-2 py-1 hover:cursor-pointer"
+                    class="git-repo git-repo-hover"
                     >GitHub Repository
                     <img
                       src="./assests/icons8-link-chain-26.png"
@@ -869,7 +829,7 @@
                   <a
                     href="https://candid-panda-ed43ff.netlify.app/#"
                     target="_blank"
-                    class="flex justify-center items-center gap-2 font-semibold border-1 rounded-2xl px-2 py-1 hover:cursor-pointer"
+                    class="live-link live-link-hover"
                     >Live URL
                     <img
                       src="./assests/icons8-link-32.png"
@@ -881,10 +841,7 @@
               </div>
             </article>
             <!-- WordPress Website   -->
-            <article
-              class="border rounded-xl w-[384px] border-gray-400"
-              aria-labelledby="portfolio-title"
-            >
+            <article class="project-art" aria-labelledby="portfolio-title">
               <!-- update banner -->
               <figure>
                 <img
@@ -928,10 +885,7 @@
                 </div>
                 <div class="flex justify-between items-center">
                   <!-- update gitHub repository -->
-                  <a
-                    href="#"
-                    target="_blank"
-                    class="flex justify-center items-center gap-2 font-semibold border-1 rounded-2xl px-2 py-1 hover:cursor-pointer"
+                  <a href="#" target="_blank" class="git-repo git-repo-hover"
                     >GitHub Repository
                     <img
                       src="./assests/icons8-link-chain-26.png"
@@ -943,7 +897,7 @@
                   <a
                     href="https://dev-practice-site-by-rahat.pantheonsite.io/landing-page/?preview_id=12&preview_nonce=1758059095&preview=true"
                     target="_blank"
-                    class="flex justify-center items-center gap-2 font-semibold border-1 rounded-2xl px-2 py-1 hover:cursor-pointer"
+                    class="live-link live-link-hover"
                     >Live URL
                     <img
                       src="./assests/icons8-link-32.png"
@@ -966,7 +920,7 @@
         <div class="flex flex-col items-center">
           <h2 class="text-4xl font-bold text-center pb-8">About Me</h2>
           <div
-            class="bg-gradient-to-tl from-emerald-800 via-emerald-600 to-emerald-800 leading-relaxed w-[90%] border-0 rounded-2xl shadow-xl p-10 mt-10"
+            class="bg-gradient-to-tl from-emerald-800/70 via-emerald-950/80 to-emerald-800/90 leading-relaxed w-[90%] border-0 rounded-2xl shadow-2xl p-10 mt-10"
             role="region"
             aria-labelledby="about-me"
           >
@@ -1007,13 +961,13 @@
           </p>
           <div class="flex justify-center items-center gap-8 py-10">
             <button
-              class="text-gray-950 font-semibold border-1 border-gray-500 rounded-md px-8 py-2 bg-emerald-300 transition-all duration-300 hover:bg-emerald-800 hover:text-emerald-100 hover:cursor-pointer"
+              class="text-gray-950 font-semibold border-1 border-gray-500 rounded-md px-8 py-2 bg-emerald-700/30 transition-all duration-300 hover:bg-emerald-900/80 hover:text-emerald-100 hover:cursor-pointer hover:border-transparent"
               type="button"
             >
               <a href="#" target="_blank">Say Hi !</a>
             </button>
             <button
-              class="text-gray-950 font-semibold border-1 border-gray-500 rounded-md px-8 py-2 bg-emerald-300 transition-all duration-300 hover:bg-emerald-800 hover:text-emerald-100 hover:cursor-pointer"
+              class="text-gray-950 font-semibold border-1 border-gray-500 rounded-md px-8 py-2 bg-emerald-700/30 transition-all duration-300 hover:bg-emerald-900/80 hover:text-emerald-100 hover:cursor-pointer hover:border-transparent"
               type="button"
             >
               <a
