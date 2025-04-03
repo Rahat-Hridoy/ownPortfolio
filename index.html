@@ -32,22 +32,24 @@
 
   <body class="bg-emerald-900/30 w-full m-auto p-0">
     <!-- navbar  -->
-    <header class="relative bg-emerald-700">
-      <nav class="block md:hidden">
-        <div class="flex justify-between items-center">
-          <a href="#" class="fixed top-[10px] left-[20px] z-9"
+    <header class="relative">
+      <!-- mobile responsive navbar -->
+      <nav class="block md:hidden fixed z-20">
+        <div class="w-screen flex justify-between items-center px-5 py-3">
+          <a href="#"
             ><img
               src="./assests/rahatHridoy.jpeg"
               alt="avatar"
               class="w-15 h-15 rounded-full border-2 border-emerald-950/70"
           /></a>
-          <div class="fixed top-[15px] right-[20px] z-9">
+          <div>
             <div class="w-[25px] h-[3px] bg-gray-900 my-1.5"></div>
             <div class="w-[25px] h-[3px] bg-gray-900 my-1.5"></div>
             <div class="w-[25px] h-[3px] bg-gray-900 my-1.5"></div>
           </div>
         </div>
       </nav>
+      <!-- laptop/desktop responsive navbar -->
       <nav
         class="hidden md:block fixed z-10 top-10 left-1/2 -translate-1/2"
         role="navigation"
@@ -102,7 +104,7 @@
           <img
             src="./assests/banner_bgImage.png"
             alt="backgrounImage"
-            class="absolute -z-10 w-full h-screen"
+            class="absolute -z-10 w-full h-full object-cover"
           />
           <!-- responsive for only mobile device -->
           <div class="block md:hidden">
@@ -110,7 +112,7 @@
               Hi ! I'm
             </h3>
             <h1
-              class="text-teal-950 text-6xl text-center font-bold tracking-wide py-2 drop-shadow-[-2px_2px_3px_rgb(255,255,255,70%)]"
+              class="text-teal-950 text-6xl text-center font-bold tracking-wide py-6 drop-shadow-[-2px_2px_3px_rgb(255,255,255,70%)]"
             >
               Rahat Hridoy
             </h1>
@@ -119,9 +121,9 @@
             >
               Frontend Developer
             </h2>
-            <div class="flex justify-center items-center gap-3 mt-10">
+            <div class="flex justify-center items-center gap-3 pt-20">
               <a
-                class="w-[140px] h-[40px] flex items-center justify-center gap-2 border-2 border-gray-950 rounded-3xl text-sm text-gray-300 font-bold px-1 py-1 cursor-pointer translate-all duration-300 bg-teal-800 hover:bg-teal-800/70 active:bg-teal-900"
+                class="w-[140px] h-[40px] flex items-center justify-center gap-2 border-2 border-gray-700 rounded-3xl text-sm text-gray-300 font-bold px-1 py-1 cursor-pointer translate-all duration-300 bg-teal-800 hover:bg-teal-800/70 active:bg-teal-900"
                 href="#"
                 target="_blank"
               >
@@ -132,12 +134,12 @@
                 />Contact Me
               </a>
               <a
-                class="w-[140px] h-[40px] flex items-center justify-center gap-2 border-2 border-gray-950 rounded-3xl text-sm text-gray-300 font-bold px-1 py-1 cursor-pointer translate-all duration-300 bg-teal-800 hover:bg-teal-800/70 active:bg-teal-900"
+                class="w-[140px] h-[40px] flex items-center justify-center gap-2 border-2 border-gray-700 rounded-3xl text-sm text-gray-300 font-bold px-1 py-1 cursor-pointer translate-all duration-300 bg-teal-800 hover:bg-teal-800/70 active:bg-teal-900"
                 href="#"
                 target="_blank"
               >
                 <img
-                  src="./assests/resume_icon.png"
+                  src="./assests/cv-resume-file-earmark-text.svg"
                   alt="contact"
                   class="w-[18px] h-[18px]"
                 />Resume
@@ -247,7 +249,7 @@
 
       <!-- Experience  -->
       <section id="experience" class="px-5 py-10 md:p-20">
-        <div class="md:w-[90%] m-auto px-4 text-center">
+        <div class="md:w-[90%] m-auto text-center">
           <h2 class="text-4xl font-bold pb-10">Experience</h2>
           <div
             class="max-w-2xl mx-auto border border-gray-400 rounded-xl shadow-md"
@@ -293,7 +295,7 @@
           <div>
             <!-- skills  -->
             <div
-              class="flex flex-wrap justify-center gap-x-20 gap-y-5 px-5 py-10 border border-gray-400 shadow-md rounded-2xl"
+              class="flex flex-wrap justify-center gap-x-30 gap-y-5 px-5 py-10 border border-gray-400 shadow-md rounded-2xl"
             >
               <!-- slill-technology 1 -->
               <div>
@@ -307,7 +309,7 @@
                 </div>
                 <!-- skill progress  -->
                 <div class="flex items-center gap-5">
-                  <div class="w-96 h-[3px] bg-gray-300 shadow-md">
+                  <div class="w-76 md:w-90 h-[3px] bg-gray-300 shadow-md">
                     <div class="w-[60%] h-[3px] bg-emerald-900"></div>
                   </div>
                   <p class="font-semibold">60%</p>
@@ -321,7 +323,7 @@
                 </div>
                 <!-- skill progress  -->
                 <div class="flex items-center gap-5">
-                  <div class="w-96 h-[3px] bg-gray-300 shadow-md">
+                  <div class="w-76 md:w-90 h-[3px] bg-gray-300 shadow-md">
                     <div class="w-[90%] h-[3px] bg-emerald-900"></div>
                   </div>
                   <p class="font-semibold">90%</p>
@@ -339,7 +341,7 @@
                 </div>
                 <!-- skill progress  -->
                 <div class="flex items-center gap-5">
-                  <div class="w-96 h-[3px] bg-gray-300 shadow-md">
+                  <div class="w-76 md:w-90 h-[3px] bg-gray-300 shadow-md">
                     <div class="w-[70%] h-[3px] bg-emerald-900"></div>
                   </div>
                   <p class="font-semibold">70%</p>
@@ -357,7 +359,7 @@
                 </div>
                 <!-- skill progress  -->
                 <div class="flex items-center gap-5">
-                  <div class="w-96 h-[3px] bg-gray-300 shadow-md">
+                  <div class="w-76 md:w-90 h-[3px] bg-gray-300 shadow-md">
                     <div class="w-[75%] h-[3px] bg-emerald-900"></div>
                   </div>
                   <p class="font-semibold">75%</p>
@@ -375,7 +377,7 @@
                 </div>
                 <!-- skill progress  -->
                 <div class="flex items-center gap-5">
-                  <div class="w-96 h-[3px] bg-gray-300 shadow-md">
+                  <div class="w-76 md:w-90 h-[3px] bg-gray-300 shadow-md">
                     <div class="w-[60%] h-[3px] bg-emerald-900"></div>
                   </div>
                   <p class="font-semibold">60%</p>
@@ -393,7 +395,7 @@
                 </div>
                 <!-- skill progress  -->
                 <div class="flex items-center gap-5">
-                  <div class="w-96 h-[3px] bg-gray-300 shadow-md">
+                  <div class="w-76 md:w-90 h-[3px] bg-gray-300 shadow-md">
                     <div class="w-[40%] h-[3px] bg-emerald-900"></div>
                   </div>
                   <p class="font-semibold">40%</p>
@@ -411,7 +413,7 @@
                 </div>
                 <!-- skill progress  -->
                 <div class="flex items-center gap-5">
-                  <div class="w-96 h-[3px] bg-gray-300 shadow-md">
+                  <div class="w-76 md:w-90 h-[3px] bg-gray-300 shadow-md">
                     <div class="w-[50%] h-[3px] bg-emerald-900"></div>
                   </div>
                   <p class="font-semibold">50%</p>
@@ -429,7 +431,7 @@
                 </div>
                 <!-- skill progress  -->
                 <div class="flex items-center gap-5">
-                  <div class="w-96 h-[3px] bg-gray-300 shadow-md">
+                  <div class="w-76 md:w-90 h-[3px] bg-gray-300 shadow-md">
                     <div class="w-[30%] h-[3px] bg-emerald-900"></div>
                   </div>
                   <p class="font-semibold">30%</p>
@@ -447,7 +449,7 @@
                 </div>
                 <!-- skill progress  -->
                 <div class="flex items-center gap-5">
-                  <div class="w-96 h-[3px] bg-gray-300 shadow-md">
+                  <div class="w-76 md:w-90 h-[3px] bg-gray-300 shadow-md">
                     <div class="w-[70%] h-[3px] bg-emerald-900"></div>
                   </div>
                   <p class="font-semibold">70%</p>
@@ -465,7 +467,7 @@
                 </div>
                 <!-- skill progress  -->
                 <div class="flex items-center gap-5">
-                  <div class="w-96 h-[3px] bg-gray-300 shadow-md">
+                  <div class="w-76 md:w-90 h-[3px] bg-gray-300 shadow-md">
                     <div class="w-[65%] h-[3px] bg-emerald-900"></div>
                   </div>
                   <p class="font-semibold">65%</p>
@@ -483,7 +485,7 @@
                 </div>
                 <!-- skill progress  -->
                 <div class="flex items-center gap-5">
-                  <div class="w-96 h-[3px] bg-gray-300 shadow-md">
+                  <div class="w-76 md:w-90 h-[3px] bg-gray-300 shadow-md">
                     <div class="w-[70%] h-[3px] bg-emerald-900"></div>
                   </div>
                   <p class="font-semibold">70%</p>
@@ -501,7 +503,7 @@
                 </div>
                 <!-- skill progress  -->
                 <div class="flex items-center gap-5">
-                  <div class="w-96 h-[3px] bg-gray-300 shadow-md">
+                  <div class="w-76 md:w-90 h-[3px] bg-gray-300 shadow-md">
                     <div class="w-[70%] h-[3px] bg-emerald-900"></div>
                   </div>
                   <p class="font-semibold">70%</p>
@@ -519,7 +521,7 @@
                 </div>
                 <!-- skill progress  -->
                 <div class="flex items-center gap-5">
-                  <div class="w-96 h-[3px] bg-gray-300 shadow-md">
+                  <div class="w-76 md:w-90 h-[3px] bg-gray-300 shadow-md">
                     <div class="w-[90%] h-[3px] bg-emerald-900"></div>
                   </div>
                   <p class="font-semibold">90%</p>
@@ -537,7 +539,7 @@
                 </div>
                 <!-- skill progress  -->
                 <div class="flex items-center gap-5">
-                  <div class="w-96 h-[3px] bg-gray-300 shadow-md">
+                  <div class="w-76 md:w-90 h-[3px] bg-gray-300 shadow-md">
                     <div class="w-[60%] h-[3px] bg-emerald-900"></div>
                   </div>
                   <p class="font-semibold">60%</p>
@@ -552,7 +554,7 @@
       <hr class="h-1 w-[90%] mx-auto my-0 border-gray-400 shadow-md" />
 
       <!-- Project  -->
-      <section class="p-20">
+      <section class="px-5 py-10 md:p-20">
         <div>
           <div>
             <h2 class="text-4xl font-bold text-center pb-8">Projects</h2>
@@ -616,7 +618,7 @@
                     />
                   </a>
                   <a
-                    href="https://startup-agency-website-template.vercel.app/"
+                    href="https://scintillating-pegasus-5f683a.netlify.app/"
                     target="_blank"
                     class="live-link live-link-hover"
                     >Live URL
@@ -1052,9 +1054,7 @@
         <h2 class="text-4xl text-gray-200 text-center font-bold py-10">
           Contact
         </h2>
-        <div
-          class="pl-10 leading-10 md:flex justify-between items-center px-5 pb-9"
-        >
+        <div class="pl-10 leading-10 md:flex justify-between items-center px-5">
           <div class="flex justify-start items-center gap-3">
             <img
               src="./assests/telephone-fill.svg"
@@ -1079,6 +1079,39 @@
             />
             <p class="text-gray-200">Sylhet, Bangladesh</p>
           </div>
+        </div>
+        <!-- social media -->
+        <div class="flex justify-center items-center gap-6 py-10">
+          <a href="https://www.linkedin.com/in/rahat-hridoy/" target="_blank"
+            ><img
+              src="./assests/linkedin-brands-solid.svg"
+              alt="linkedin"
+              class="banner_icon"
+              title="linkedin"
+          /></a>
+          <a href="https://github.com/Rahat-Hridoy" target="_blank"
+            ><img
+              src="./assests/github-brands-solid.svg"
+              alt="github"
+              class="banner_icon"
+              title="github"
+          /></a>
+          <a href="https://www.facebook.com/rahat.hridoy.503" target="_blank"
+            ><img
+              src="./assests/facebook-brands-solid.svg"
+              alt="facebook"
+              class="banner_icon"
+              title="facebook"
+          /></a>
+          <a
+            href="./assests/MD-RAHATUL-ISLAM-resume-Support Engineer.pdf"
+            target="_blank"
+            ><img
+              src="./assests/resume_rahatHridoy.png"
+              alt="whatsapp"
+              class="banner_icon"
+              title="Resume"
+          /></a>
         </div>
         <p class="text-gray-400 text-sm text-center py-1">
           &copy; <span id="year"></span> Rahat Hridoy. All Rights Reserved.
