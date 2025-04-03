@@ -30,12 +30,26 @@
     <link rel="stylesheet" href="./src/input.css" />
   </head>
 
-  <body class="bg-emerald-900/30">
+  <body class="bg-emerald-900/30 w-full m-auto p-0">
     <!-- navbar  -->
-    <header class="relative">
-      <nav></nav>
+    <header class="relative bg-emerald-700">
+      <nav class="block md:hidden">
+        <div class="flex justify-between items-center">
+          <a href="#" class="fixed top-[10px] left-[20px] z-9"
+            ><img
+              src="./assests/rahatHridoy.jpeg"
+              alt="avatar"
+              class="w-15 h-15 rounded-full border-2 border-emerald-950/70"
+          /></a>
+          <div class="fixed top-[15px] right-[20px] z-9">
+            <div class="w-[25px] h-[3px] bg-gray-900 my-1.5"></div>
+            <div class="w-[25px] h-[3px] bg-gray-900 my-1.5"></div>
+            <div class="w-[25px] h-[3px] bg-gray-900 my-1.5"></div>
+          </div>
+        </div>
+      </nav>
       <nav
-        class="fixed z-10 top-10 left-1/2 -translate-1/2 md:w-auto"
+        class="hidden md:block fixed z-10 top-10 left-1/2 -translate-1/2"
         role="navigation"
         aria-label="Main navigation"
       >
@@ -90,117 +104,165 @@
             alt="backgrounImage"
             class="absolute -z-10 w-full h-screen"
           />
-          <div class="flex justify-center items-center gap-5">
-            <div
-              class="translate-all duration-300 hover:-rotate-20 hover:scale-105"
+          <!-- responsive for only mobile device -->
+          <div class="block md:hidden">
+            <h3 class="text-red-200 text-2xl text-center font-bold">
+              Hi ! I'm
+            </h3>
+            <h1
+              class="text-teal-950 text-6xl text-center font-bold tracking-wide py-2 drop-shadow-[-2px_2px_3px_rgb(255,255,255,70%)]"
             >
-              <img
-                src="./assests/rahatHridoy.jpeg"
-                alt="profile"
-                class="w-[100px] h-[100px] rounded-full ring-4 ring-[#436143]"
-              />
-            </div>
-            <div>
-              <h3
-                class="text-emerald-50 font-extrabold text-3xl leading-10 tracking-wider drop-shadow-[-2px_2px_1px_rgb(0,0,0,70%)]"
+              Rahat Hridoy
+            </h1>
+            <h2
+              class="text-red-200 text-4xl text-center font-bold tracking-wide py-2 drop-shadow-[-2px_2px_3px_rgb(0,0,0,70%)]"
+            >
+              Frontend Developer
+            </h2>
+            <div class="flex justify-center items-center gap-3 mt-10">
+              <a
+                class="w-[140px] h-[40px] flex items-center justify-center gap-2 border-2 border-gray-950 rounded-3xl text-sm text-gray-300 font-bold px-1 py-1 cursor-pointer translate-all duration-300 bg-teal-800 hover:bg-teal-800/70 active:bg-teal-900"
+                href="#"
+                target="_blank"
               >
-                Rahat Hridoy
-              </h3>
-              <div class="flex justify-items-start items-center">
-                <!-- <img
-                  src="./assests/bangladesh.png"
-                  alt="Bangladesh"
-                  class="w-[40px] h-[40px]"
-                /> -->
-                <p class="text-cyan-50 text-left font-semibold pl-1">
-                  Based in Bangladesh
-                </p>
+                <img
+                  src="./assests/envelope.svg"
+                  alt="contact"
+                  class="w-[18px] h-[18px]"
+                />Contact Me
+              </a>
+              <a
+                class="w-[140px] h-[40px] flex items-center justify-center gap-2 border-2 border-gray-950 rounded-3xl text-sm text-gray-300 font-bold px-1 py-1 cursor-pointer translate-all duration-300 bg-teal-800 hover:bg-teal-800/70 active:bg-teal-900"
+                href="#"
+                target="_blank"
+              >
+                <img
+                  src="./assests/resume_icon.png"
+                  alt="contact"
+                  class="w-[18px] h-[18px]"
+                />Resume
+              </a>
+            </div>
+          </div>
+          <!-- responsive for tablet or laptop or dasktop -->
+          <div class="hidden md:block">
+            <!-- profile_avatar + Rahat Hridoy+ Bangladesh -->
+            <div class="flex justify-center items-center gap-5">
+              <div
+                class="translate-all duration-300 hover:-rotate-20 hover:scale-105"
+              >
+                <img
+                  src="./assests/rahatHridoy.jpeg"
+                  alt="profile"
+                  class="w-[100px] h-[100px] rounded-full ring-4 ring-[#436143]"
+                />
+              </div>
+              <div>
+                <h3
+                  class="text-emerald-50 font-extrabold text-3xl leading-10 tracking-wider drop-shadow-[-2px_2px_1px_rgb(0,0,0,70%)]"
+                >
+                  Rahat Hridoy
+                </h3>
+                <div class="flex justify-items-start items-center">
+                  <!-- <img
+                    src="./assests/bangladesh.png"
+                    alt="Bangladesh"
+                    class="w-[40px] h-[40px]"
+                  /> -->
+                  <p class="text-cyan-50 text-left font-semibold pl-1">
+                    Based in Bangladesh
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="relative">
-            <div>
-              <h1
-                class="text-red-100 text-8xl font-bold tracking-wide mt-6 ml-25 drop-shadow-[-2px_2px_3px_rgb(0,0,0,70%)]"
-              >
-                FRONTEND
-              </h1>
-              <h1
-                class="text-red-100 text-8xl font-bold tracking-wide mb-6 drop-shadow-[-2px_2px_3px_rgb(0,0,0,70%)]"
-              >
-                DEVELOPER
-              </h1>
+            <!-- Frontend Developer + contact me -->
+            <div class="relative">
+              <div>
+                <h1
+                  class="text-red-200 text-8xl font-bold tracking-wide mt-6 ml-25 drop-shadow-[-2px_2px_3px_rgb(0,0,0,70%)]"
+                >
+                  FRONTEND
+                </h1>
+                <h1
+                  class="text-red-200 text-8xl font-bold tracking-wide mb-6 drop-shadow-[-2px_2px_3px_rgb(0,0,0,70%)]"
+                >
+                  DEVELOPER
+                </h1>
+                <div class="hidden lg:block">
+                  <a
+                    class="absolute lg:bottom-[11%] lg:-right-[18%] w-[180px] h-[45px] flex items-center justify-center gap-2 border-2 border-gray-950 rounded-3xl text-gray-300 font-bold px-1 py-1 cursor-pointer translate-all duration-300 bg-teal-800 hover:bg-teal-800/70 active:bg-teal-900"
+                    href="#"
+                    target="_blank"
+                  >
+                    <img
+                      src="./assests/envelope.svg"
+                      alt="contact"
+                      class="w-[20px] h-[20px]"
+                    />Contact Me
+                  </a>
+                </div>
+              </div>
             </div>
-            <button
-              class="absolute w-[180px] h-[45px] md:bottom-11 md:-right-28 flex items-center justify-center gap-2 border-2 rounded-3xl font-bold px-6 py-2 cursor-pointer translate-all duration-500 bg-gradient-to-br hover:bg-emerald-700/30"
-              type="button"
-            >
-              <img
-                src="./assests/envelope.svg"
-                alt="contact"
-                class="w-[20px] h-[20px]"
-              />Contact Me
-            </button>
-          </div>
-
-          <!-- social media -->
-          <div class="flex justify-center items-center gap-6">
-            <a href="https://www.linkedin.com/in/rahat-hridoy/" target="_blank"
-              ><img
-                src="./assests/linkedin-brands-solid.svg"
-                alt="linkedin"
-                class="banner_icon"
-                title="linkedin"
-            /></a>
-            <a href="https://github.com/Rahat-Hridoy" target="_blank"
-              ><img
-                src="./assests/github-brands-solid.svg"
-                alt="github"
-                class="banner_icon"
-                title="github"
-            /></a>
-            <a href="https://www.facebook.com/rahat.hridoy.503" target="_blank"
-              ><img
-                src="./assests/facebook-brands-solid.svg"
-                alt="facebook"
-                class="banner_icon"
-                title="facebook"
-            /></a>
-            <a
-              href="./assests/MD-RAHATUL-ISLAM-resume-Support Engineer.pdf"
-              target="_blank"
-              ><img
-                src="./assests/resume_rahatHridoy.png"
-                alt="whatsapp"
-                class="banner_icon"
-                title="Resume"
-            /></a>
+            <!-- social media -->
+            <div class="flex justify-center items-center gap-6">
+              <a
+                href="https://www.linkedin.com/in/rahat-hridoy/"
+                target="_blank"
+                ><img
+                  src="./assests/linkedin-brands-solid.svg"
+                  alt="linkedin"
+                  class="banner_icon"
+                  title="linkedin"
+              /></a>
+              <a href="https://github.com/Rahat-Hridoy" target="_blank"
+                ><img
+                  src="./assests/github-brands-solid.svg"
+                  alt="github"
+                  class="banner_icon"
+                  title="github"
+              /></a>
+              <a
+                href="https://www.facebook.com/rahat.hridoy.503"
+                target="_blank"
+                ><img
+                  src="./assests/facebook-brands-solid.svg"
+                  alt="facebook"
+                  class="banner_icon"
+                  title="facebook"
+              /></a>
+              <a
+                href="./assests/MD-RAHATUL-ISLAM-resume-Support Engineer.pdf"
+                target="_blank"
+                ><img
+                  src="./assests/resume_rahatHridoy.png"
+                  alt="whatsapp"
+                  class="banner_icon"
+                  title="Resume"
+              /></a>
+            </div>
           </div>
         </div>
       </section>
       <!-- End Banner Part -->
 
       <!-- Experience  -->
-      <section id="experience" class="p-10 flex justify-center items-center">
-        <div class="container mx-auto px-4 text-center">
-          <h2 class="text-4xl font-bold pb-15">Experience</h2>
+      <section id="experience" class="px-5 py-10 md:p-20">
+        <div class="md:w-[90%] m-auto px-4 text-center">
+          <h2 class="text-4xl font-bold pb-10">Experience</h2>
           <div
-            class="w-2xl mx-auto px-10 py-5 border border-gray-400 rounded-xl shadow-md"
+            class="max-w-2xl mx-auto border border-gray-400 rounded-xl shadow-md"
           >
             <h3 class="text-2xl font-bold py-2 text-gray-900">
               Web Development
             </h3>
-            <p class="text-justify font-semibold text-gray-700 py-2">
+            <p class="text-justify font-semibold text-gray-700 p-5">
               I'm a passionate web developer who has independently built
               multiple projects, gaining hands-on experience in front-end and
               back-end development. I love turning ideas into functional and
               visually appealing websites while continuously learning and
               improving my skills.
             </p>
-            <div
-              class="flex flex-wrap gap-x-3 gap-y-3 py-3"
-              aria-label="Skills"
-            >
+            <div class="flex flex-wrap gap-x-3 gap-y-3 p-5" aria-label="Skills">
               <span class="experience-tech"> JavaScript </span>
               <span class="experience-tech"> HTML </span>
               <span class="experience-tech"> CSS </span>
@@ -218,11 +280,11 @@
       <hr class="h-1 w-[90%] mx-auto my-0 border-gray-400 shadow-md" />
 
       <!-- Skill sectin -->
-      <section>
-        <div class="container">
+      <section class="px-5 py-10 md:p-20">
+        <div class="md:w-[90%] m-auto">
           <div class="text-center">
             <h2 class="text-4xl font-bold">Core Skills</h2>
-            <p class="px-40 py-8">
+            <p class="px-5 md:px-40 py-8">
               I excel in crafting visually compelling and highly functional
               digital experiences. With a strong focus on development, user
               experience, and problem-solving
@@ -231,7 +293,7 @@
           <div>
             <!-- skills  -->
             <div
-              class="flex flex-wrap justify-center gap-x-20 gap-y-5 py-10 border border-gray-400 shadow-md rounded-2xl"
+              class="flex flex-wrap justify-center gap-x-20 gap-y-5 px-5 py-10 border border-gray-400 shadow-md rounded-2xl"
             >
               <!-- slill-technology 1 -->
               <div>
@@ -496,7 +558,9 @@
             <h2 class="text-4xl font-bold text-center pb-8">Projects</h2>
           </div>
           <!-- Project cards -->
-          <div class="flex items-stretch flex-wrap gap-x-4 gap-y-5">
+          <div
+            class="flex justify-center items-stretch flex-wrap gap-x-4 gap-y-5"
+          >
             <!-- Portfolio website 1  -->
             <article class="project-art" aria-labelledby="portfolio-title">
               <figure>
@@ -916,9 +980,9 @@
       <hr class="h-1 w-[90%] mx-auto my-0 border-gray-400 shadow-md" />
 
       <!-- About Me  -->
-      <section class="p-20">
+      <section class="px-5 py-10 md:p-20">
         <div class="flex flex-col items-center">
-          <h2 class="text-4xl font-bold text-center pb-8">About Me</h2>
+          <h2 class="text-4xl font-bold text-center md:pb-8">About Me</h2>
           <div
             class="bg-gradient-to-tl from-emerald-800/70 via-emerald-950/80 to-emerald-800/90 leading-relaxed w-[90%] border-0 rounded-2xl shadow-2xl p-10 mt-10"
             role="region"
@@ -952,7 +1016,7 @@
       <hr class="h-1 w-[90%] mx-auto my-0 border-gray-400 shadow-md" />
 
       <!-- Contact  -->
-      <section class="p-40">
+      <section class="px-5 py-10 md:p-40">
         <div class="flex flex-col items-center">
           <h3 class="text-4xl font-bold text-center pb-8">Get In Touch!</h3>
           <p class="w-[90%] text-gray-900 font-semibold text-center">
