@@ -28,6 +28,7 @@
     <title>Rahat Hridoy</title>
     <link rel="stylesheet" href="./src/output.css" />
     <link rel="stylesheet" href="./src/input.css" />
+    <link rel="stylesheet" href="./src/style.css" />
   </head>
 
   <body class="bg-emerald-900/30 w-full m-auto p-0">
@@ -35,17 +36,88 @@
     <header class="relative">
       <!-- mobile responsive navbar -->
       <nav class="block md:hidden fixed z-20">
-        <div class="w-screen flex justify-between items-center px-5 py-3">
-          <a href="#"
+        <div
+          class="w-screen flex justify-between items-center px-5 py-3 relative"
+        >
+          <!-- left side logo image  -->
+          <a href="./index.html"
             ><img
               src="./assests/rahatHridoy.jpeg"
               alt="avatar"
               class="w-15 h-15 rounded-full border-2 border-emerald-950/70"
           /></a>
+          <!-- right side toggle menu -->
           <div>
-            <div class="w-[25px] h-[3px] bg-gray-900 my-1.5"></div>
-            <div class="w-[25px] h-[3px] bg-gray-900 my-1.5"></div>
-            <div class="w-[25px] h-[3px] bg-gray-900 my-1.5"></div>
+            <div class="hover:cursor-pointer toggle-menu" onclick="toggle()">
+              <!-- changable hamburger icon -->
+              <div
+                class="w-[25px] h-[3px] bg-gray-900 my-1.5 duration-200"
+                id="bar"
+              ></div>
+              <div class="w-[15px] h-[3px] bg-gray-900 my-1.5" id="bar"></div>
+              <div
+                class="w-[25px] h-[3px] bg-gray-900 my-1.5 duration-200"
+                id="bar"
+              ></div>
+            </div>
+            <!-- mobile responsive menu  -->
+            <div
+              id="menu"
+              class="absolute top-16 right-0 translate-x-full z-20 duration-200"
+            >
+              <ul
+                class="bg-white/30 backdrop-blur-md shadow-lg rounded-sm flex flex-col justify-start items-center gap-8 px-10 py-8 font-semibold text-gray-900 w-[280px] h-screen"
+              >
+                <li>
+                  <a
+                    class="relative group p-1"
+                    href="/index.html"
+                    aria-label="Home"
+                  >
+                    Home
+                    <span
+                      class="w-0 h-0.5 bg-gray-600 absolute left-0 -bottom-0 transition-all duration-300 group-hover:w-full"
+                    ></span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="relative group p-1"
+                    href="./project.html"
+                    aria-label="Projects"
+                  >
+                    Projects
+                    <span
+                      class="w-0 h-0.5 bg-gray-600 absolute left-0 -bottom-0 transition-all duration-300 group-hover:w-full"
+                    ></span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="relative group p-1"
+                    href="/about.html"
+                    aria-label="About"
+                  >
+                    About
+                    <span
+                      class="w-0 h-0.5 bg-gray-600 absolute left-0 -bottom-0 transition-all duration-300 group-hover:w-full"
+                    ></span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="relative group p-1"
+                    href="./contact.html"
+                    aria-label="Contact"
+                  >
+                    Contact
+                    <span
+                      class="w-0 h-0.5 bg-gray-600 absolute left-0 -bottom-0 transition-all duration-300 group-hover:w-full"
+                    ></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
@@ -127,7 +199,7 @@
             </h2>
             <div class="flex justify-center items-center gap-3 pt-20">
               <a
-                class="w-[140px] h-[40px] flex items-center justify-center gap-2 border-2 border-gray-700 rounded-3xl text-sm text-gray-300 font-bold px-1 py-1 cursor-pointer translate-all duration-300 bg-teal-800 hover:bg-teal-800/70 active:bg-teal-900"
+                class="w-[140px] h-[40px] flex items-center justify-center gap-2 rounded-3xl text-sm text-gray-300 font-bold px-1 py-1 cursor-pointer translate-all duration-300 bg-teal-800 hover:bg-teal-800/70 active:bg-teal-900"
                 href="./contact.html"
                 target="_blank"
               >
@@ -138,8 +210,8 @@
                 />Contact Me
               </a>
               <a
-                class="w-[140px] h-[40px] flex items-center justify-center gap-2 border-2 border-gray-700 rounded-3xl text-sm text-gray-300 font-bold px-1 py-1 cursor-pointer translate-all duration-300 bg-teal-800 hover:bg-teal-800/70 active:bg-teal-900"
-                href="#"
+                class="w-[140px] h-[40px] flex items-center justify-center gap-2 rounded-3xl text-sm text-gray-300 font-bold px-1 py-1 cursor-pointer translate-all duration-300 bg-teal-800 hover:bg-teal-800/70 active:bg-teal-900"
+                href="./assests/MD-RAHATUL-ISLAM-resume-post-web-designer.pdf"
                 target="_blank"
               >
                 <img
@@ -197,7 +269,7 @@
                 <div class="hidden lg:block">
                   <a
                     class="absolute lg:bottom-[11%] lg:-right-[18%] w-[180px] h-[45px] flex items-center justify-center gap-2 border-2 border-gray-950 rounded-3xl text-gray-300 font-semibold px-1 py-1 cursor-pointer translate-all duration-300 bg-teal-800 hover:bg-teal-800/70 active:bg-teal-900"
-                    href="#"
+                    href="./contact.html"
                     target="_blank"
                   >
                     <img
@@ -237,7 +309,7 @@
                   title="facebook"
               /></a>
               <a
-                href="./assests/MD-RAHATUL-ISLAM-resume-Support Engineer.pdf"
+                href="./assests/MD-RAHATUL-ISLAM-resume-post-web-designer.pdf"
                 target="_blank"
                 ><img
                   src="./assests/resume_rahatHridoy.png"
@@ -558,7 +630,7 @@
       <hr class="h-1 w-[90%] mx-auto my-0 border-gray-400 shadow-md" />
 
       <!-- Project  -->
-      <section class="px-5 py-10 md:p-20">
+      <section class="px-5 py-10 md:p-20" id="project">
         <div>
           <div>
             <h2 class="text-4xl font-bold text-center pb-8">Projects</h2>
@@ -567,14 +639,16 @@
           <div
             class="flex justify-center items-stretch flex-wrap gap-x-4 gap-y-5"
           >
-            <!-- Portfolio website 1  -->
+            <!--card-1- Portfolio website  -->
             <article class="project-art" aria-labelledby="portfolio-title">
-              <figure>
-                <img
-                  src="./assests/ownPortfolio.jpg"
-                  alt="Preview of the portfolio website"
-                  class="rounded-xl w-full h-[216px]"
-                />
+              <figure class="rounded-xl w-full h-[216px] overflow-hidden">
+                <div class="animate-scroll">
+                  <img
+                    src="./assests/portfolio.png"
+                    alt="Preview of the portfolio website"
+                    class="hover:cursor-pointer"
+                  />
+                </div>
               </figure>
               <div class="flex flex-col justify-stretch p-5">
                 <div>
@@ -635,14 +709,16 @@
                 </div>
               </div>
             </article>
-            <!-- Portfolio website 2  -->
+            <!-- card-2-service website   -->
             <article class="project-art" aria-labelledby="portfolio-title">
-              <figure>
-                <img
-                  src="./assests/rrf-portfolio.jpg"
-                  alt="Preview of the portfolio website"
-                  class="rounded-xl w-full h-[216px]"
-                />
+              <figure class="rounded-xl w-full h-[216px] overflow-hidden">
+                <div class="animate-scroll">
+                  <img
+                    src="./assests/plumner_point.png"
+                    alt="Preview of the portfolio website"
+                    class="hover:cursor-pointer"
+                  />
+                </div>
               </figure>
               <div class="flex flex-col justify-stretch p-5">
                 <div>
@@ -703,14 +779,92 @@
                 </div>
               </div>
             </article>
-            <!-- StartUp Website  -->
+            <!-- card-3-corporate website   -->
             <article class="project-art" aria-labelledby="portfolio-title">
-              <figure>
-                <img
-                  src="./assests/startup_website.jpg"
-                  alt="Preview of the portfolio website"
-                  class="rounded-xl w-full h-[216px]"
-                />
+              <figure class="rounded-xl w-full h-[216px] overflow-hidden">
+                <div class="animate-scroll">
+                  <img
+                    src="./assests/corporate-website.png"
+                    alt="Preview of the portfolio website"
+                    class="hover:cursor-pointer"
+                  />
+                </div>
+              </figure>
+              <div class="flex flex-col justify-stretch p-5">
+                <div>
+                  <h3 class="text-xl font-bold text-gray-800 pb-2">
+                    Portfolio Website
+                  </h3>
+                  <p
+                    class="font-semibold text-[#263626] leading-tight text-justify"
+                  >
+                    This corporate website is built with HTML, CSS, JavaScript,
+                    and styled using Tailwind CSS. It features a clean,
+                    responsive layout with sections for services, testimonials,
+                    and team members. Tailwind's utility-first approach ensures
+                    fast, consistent, and modern design.
+                  </p>
+                  <div
+                    class="flex justify-items-start items-center flex-wrap gap-x-3 gap-y-2 py-3"
+                  >
+                    <span
+                      class="text-emerald-100 border-1 bg-[#375e38] rounded-3xl px-4"
+                    >
+                      HTML
+                    </span>
+                    <span
+                      class="text-emerald-100 border-1 bg-[#375e38] rounded-3xl px-4"
+                    >
+                      CSS
+                    </span>
+                    <span
+                      class="text-emerald-100 border-1 bg-[#375e38] rounded-3xl px-4"
+                    >
+                      Tailwind CSS
+                    </span>
+                    <span
+                      class="text-emerald-100 border-1 bg-[#375e38] rounded-3xl px-4"
+                    >
+                      JavaScript
+                    </span>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <a
+                    href="https://github.com/Rahat-Hridoy/RRF-Exam1.git"
+                    target="_blank"
+                    class="git-repo git-repo-hover"
+                    >GitHub Repository
+                    <img
+                      src="./assests/icons8-link-chain-26.png"
+                      alt="link"
+                      class="w-4 h-4"
+                    />
+                  </a>
+                  <a
+                    href="https://boisterous-wisp-faeea4.netlify.app/"
+                    target="_blank"
+                    class="live-link live-link-hover"
+                    >Live URL
+                    <img
+                      src="./assests/icons8-link-32.png"
+                      alt="link"
+                      class="w-5 h-5"
+                    />
+                  </a>
+                </div>
+              </div>
+            </article>
+            <!-- card-4-Startup Website  -->
+            <article class="project-art" aria-labelledby="portfolio-title">
+              <figure class="rounded-xl w-full h-[216px] overflow-hidden">
+                <div class="animate-scroll">
+                  <img
+                    src="./assests/startup_website.png"
+                    alt="Preview of the portfolio website"
+                    class="hover:cursor-pointer"
+                  />
+                </div>
               </figure>
               <div class="flex flex-col justify-stretch p-5">
                 <div>
@@ -770,32 +924,29 @@
                 </div>
               </div>
             </article>
-            <!-- Banking Website   -->
+            <!-- card-5-Educational Website  -->
             <article class="project-art" aria-labelledby="portfolio-title">
-              <!-- update banner -->
-              <figure>
-                <img
-                  src="./assests/bank-website.jpg"
-                  alt="Preview of the portfolio website"
-                  class="rounded-xl w-full h-[216px]"
-                />
+              <figure class="rounded-xl w-full h-[216px] overflow-hidden">
+                <div class="animate-scroll">
+                  <img
+                    src="./assests/educational-website.png"
+                    alt="Preview of the portfolio website"
+                    class="hover:cursor-pointer"
+                  />
+                </div>
               </figure>
-
               <div class="flex flex-col justify-stretch p-5">
                 <div>
-                  <!--update Title  -->
                   <h3 class="text-xl font-bold text-gray-800 pb-2">
-                    Banking Website
+                    StartUp Website
                   </h3>
-                  <!-- update Description -->
                   <p
                     class="font-semibold text-[#263626] leading-tight text-justify"
                   >
-                    Developed a modern banking website using HTML & CSS,
-                    featuring a sleek dark theme, transaction tracking, and an
-                    intuitive UI for enhanced user experience.
+                    Developed a responsive startup landing page using HTML &
+                    CSS, featuring a clean UI, structured layout, and
+                    interactive elements for an enhanced user experience.
                   </p>
-                  <!-- update technology -->
                   <div
                     class="flex justify-items-start items-center flex-wrap gap-x-3 gap-y-2 py-3"
                   >
@@ -809,12 +960,16 @@
                     >
                       CSS
                     </span>
+                    <span
+                      class="text-emerald-100 border-1 bg-[#375e38] rounded-3xl px-4"
+                    >
+                      JavaScript
+                    </span>
                   </div>
                 </div>
                 <div class="flex justify-between items-center">
-                  <!-- update gitHub repository -->
                   <a
-                    href="https://github.com/Rahat-Hridoy/YourBank"
+                    href="https://github.com/Rahat-Hridoy/Startup_agency_website_template"
                     target="_blank"
                     class="git-repo git-repo-hover"
                     >GitHub Repository
@@ -824,9 +979,8 @@
                       class="w-4 h-4"
                     />
                   </a>
-                  <!-- update Live Link  -->
                   <a
-                    href="https://stellar-lily-d2cd52.netlify.app/"
+                    href="https://startup-agency-website-template.vercel.app/"
                     target="_blank"
                     class="live-link live-link-hover"
                     >Live URL
@@ -839,7 +993,7 @@
                 </div>
               </div>
             </article>
-            <!-- Finacial Website   -->
+            <!-- card-6-Finacial Website   -->
             <article class="project-art" aria-labelledby="portfolio-title">
               <!-- update banner -->
               <figure>
@@ -1108,7 +1262,7 @@
               title="facebook"
           /></a>
           <a
-            href="./assests/MD-RAHATUL-ISLAM-resume-Support Engineer.pdf"
+            href="./assests/MD-RAHATUL-ISLAM-resume-post-web-designer.pdf"
             target="_blank"
             ><img
               src="./assests/resume_rahatHridoy.png"

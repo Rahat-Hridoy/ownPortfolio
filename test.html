@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Hamburger Menu</title>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <div class="flex justify-between items-center p-4 bg-white shadow-md">
+      <h1 class="text-xl font-bold">Logo</h1>
+
+      <!-- Hamburger Icon -->
+      <div
+        onclick="toggleMenu()"
+        class="md:hidden flex flex-col space-y-1 cursor-pointer"
+      >
+        <span class="bar w-6 h-0.5 bg-black transition-all duration-300"></span>
+        <span class="bar w-6 h-0.5 bg-black transition-all duration-300"></span>
+        <span class="bar w-6 h-0.5 bg-black transition-all duration-300"></span>
+      </div>
+    </div>
+
+    <!-- Slide Menu -->
+    <div
+      id="menu"
+      class="fixed top-0 right-0 w-2/3 h-full bg-white p-4 transform translate-x-full transition-transform duration-300 z-50"
+    >
+      <ul class="space-y-4">
+        <li><a href="#" class="text-black">Home</a></li>
+        <li><a href="#" class="text-black">About</a></li>
+        <li><a href="#" class="text-black">Contact</a></li>
+      </ul>
+    </div>
+
+    <script>
+      const bar = document.querySelectorAll(".bar");
+      const menu = document.getElementById("menu");
+      let isVisible = false;
+
+      function toggleMenu() {
+        // Animate bars
+        bar[0].classList.toggle("rotate-45");
+        bar[0].classList.toggle("translate-y-[7px]");
+        bar[1].classList.toggle("opacity-0");
+        bar[2].classList.toggle("-rotate-45");
+        bar[2].classList.toggle("-translate-y-[7px]");
+
+        // Toggle menu classes
+        if (isVisible) {
+          menu.classList.remove("translate-x-0");
+          menu.classList.add("translate-x-full");
+        } else {
+          menu.classList.remove("translate-x-full");
+          menu.classList.add("translate-x-0");
+        }
+
+        isVisible = !isVisible;
+      }
+    </script>
+  </body>
+</html>

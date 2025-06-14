@@ -1,0 +1,12 @@
+@keyframes scroll {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-80%);
+  }
+}
+
+.animate-scroll:hover {
+  animation: scroll 5s linear;
+}
