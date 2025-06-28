@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1170px;
+  --color-primary: #dfdccf;
+  --color-second: #7e6b50;
+  --color-alpha: #2b221d;
+  --color-bita: #403834;
+  --color-btn: #93835f;
+  --font-head: "Alegreya", serif;
+  --font-pera: "Alegreya", san;
+}
 .banner_icon {
   @apply w-[40px] h-[40px] p-2 bg-red-200/30  rounded-full duration-500 hover:-rotate-12;
 }
@@ -17,7 +31,7 @@
   @apply w-8 h-8;
 }
 .project-art {
-  @apply border rounded-xl w-[384px] border-gray-400 relative pb-10;
+  @apply border rounded-xl w-[384px] border-gray-400 relative pb-10 duration-200 hover:cursor-pointer hover:scale-102 hover:shadow-2xl;
 }
 .git-repo {
   @apply flex justify-center items-center gap-2 font-semibold border-1 rounded-2xl px-2 py-1 absolute bottom-2 left-5 duration-600;

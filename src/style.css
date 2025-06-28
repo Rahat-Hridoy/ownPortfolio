@@ -7,6 +7,6 @@
   }
 }
 
-.animate-scroll:hover {
-  animation: scroll 5s linear;
+.project-art:hover .animate-scroll {
+  animation: scroll 5s linear forwards;
 }
